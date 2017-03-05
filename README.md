@@ -1,31 +1,22 @@
-#XSYU Bachelor Thesis v 0.1
-##by Liumei Zhang
-=================================================================
-###简介
-This is a free LaTeX template for the undergraduate thesis at [Xi'an Shiyou University](http://www.xsyu.edu.cn).
-As you may know, LaTeX is a commonly accepted as the most powerful tool in editing scientific 
-related documents. Most of books, articles and even some papers were written 
-by LaTeX that it have been proved to be the best choice for your thesis. 
-Many famous universities in China had already publish their LaTeX template in both undergraduate 
-and graduate. However, it is the first time for Xi'an Shiyou Univ. to have a bachelor degree 
-thesis templates. This templates may contains some errors or faults so please feel free to modify
-them and make this templates better. By using this simple template, you’ll free from boring format set up and focus yourself on the
-explanation of your idea. And it will be a valuable experience for you to study how to use LaTeX 
-in the next few month. For any question other than the use of templates please contact me with the following e-mail:
-[thesis@xxx.com](mailto:thesis@xxx.com) OR Just put them in the issue part on the right section of this page.
+# XSYU Bachelor Thesis
 
-本模板是[西安石油大学](http://www.xsyu.edu.cn)本科生毕业论文LaTeX免费模板。如你所知，LaTeX是一个流行的编辑科学类文章的工具。
-大多数科学类书籍，期刊，文章都采用了LaTeX，而它也是完成毕业论文的不二选择。中国大部分的知名大学都拥有自己的本科生以及硕博毕业论文LaTeX模板，然而我校此方面仍旧是空白。这是
-本科生模板首次的发布，如果模板中有错误希望您帮助修改来一同完善这个模板。
-使用这个模板可以使你从无聊的格式限制中解脱出来，从而更专注地阐述自己的想法。相信学习LaTeX会成为
-你的一段宝贵经历,
-如果你有关于本模板的良好意见和建议，请发送到：[xxx@xxx.com](mailto:xxx@xxx.com) 或直接在页面右侧的问题一栏中
-提出。
+本模板是 [西安石油大学](http://www.xapi.edu.cn/) 本科生毕业论文 LaTeX 免费模板。如你所知，LaTeX 是一个流行的编辑科学类文章的工具。大多数科学类书籍、期刊、文章都采用了 LaTeX，而它也是完成毕业论文的不二选择。中国大部分的知名大学都拥有自己的本科生以及硕博毕业论文 LaTeX 模板，但西安石油大学没有。这是我校本科生模板的首次发布，如果模板中有错误希望您帮助修改来一同完善这个模板。
 
-###使用方法
+**使用这个模板可以使你从无聊的格式限制中解脱出来，从而更专注地阐述自己的想法。**相信学习 LaTeX 会成为
+你的一段宝贵经历，尤其是准备考研的同学。如果你有关于本模板的良好意见和建议，请在 Issues 中提出。
 
-* 使用TeX编辑器打开`thesis.tex`，并将编译方式设定为`XeLaTeX`
+## 使用方法
 
-* 设定主文档为`thesis.tex`，尝试进行编译，并比较编译文档和`thesis(back).pdf`之间的差异
+* [点击这里](https://github.com/h2y/xsyu-latex/archive/master.zip) 下载此项目。
 
+* 使用 TeX 编辑器打开 `thesis.tex`，并将编译方式设定为 `XeLaTeX`。
 
+* 设定主文档为 `thesis.tex`，尝试进行编译。
+
+## 相关资源
+
+- 一份其实很短的 LaTeX 入门文档：<http://liam0205.me/2014/09/08/latex-introduction/>
+
+- 编辑器 CTeX 下载：<http://www.ctex.org/CTeXDownload>
+
+欢迎大家补充关于 LaTeX 的更多优秀资源。
