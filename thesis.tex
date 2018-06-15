@@ -1,17 +1,9 @@
-%%=======================================
-%  XSYU Bachelor Thesis v 0.1b
-%  Originaly by: Tsao Yu
-%  tsaoyu@tsaoyu.com 
-%  Modified by: Liumei Zhang
-%  zhangliumei@xsyu.edu.cn
-%  Last Modify Date Jun.14,2016
-%%=======================================
-
 \documentclass[cs4size,a4paper]{ctexart}
 \usepackage{xeCJK}
-%\usepackage{CJK}
-\usepackage[subfigure]{tocloft}%章节总标题加点
-\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}%章节总标题加点
+
+%章节总标题加点
+\usepackage[subfigure]{tocloft}	
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}  
 
 %==================== 数学符号公式 ============
 \usepackage{amsmath}                 % AMS LaTeX宏包
@@ -20,56 +12,88 @@
 \usepackage[style=1]{mdframed}
 \usepackage{amsthm}
 \usepackage{amsfonts}
-\usepackage{mathrsfs}                % 英文花体字 体
+\usepackage{mathrsfs}                % 英文花体字体
 \usepackage{bm}                      % 数学公式中的黑斜体
 \usepackage{bbding,manfnt}           % 一些图标，如 \dbend
-\usepackage{lettrine}           
-     % 首字下沉，命令\lettrine
+\usepackage{lettrine}                % 首字下沉，命令\lettrine
 \def\attention{\lettrine[lines=2,lraise=0,nindent=0em]{\large\textdbend\hspace{1mm}}{}}
 \usepackage{longtable}
 \usepackage[toc,page]{appendix}
 \usepackage{geometry}                % 页边距调整
 \geometry{top=3.0cm,bottom=2.7cm,left=2.5cm,right=2.5cm}
 %\usepackage{caption2}               % 浮动图形和表格标题样式
-%====================公式按章编号==========================
+
+%====================按章编号==========================
 \numberwithin{equation}{section}
 \numberwithin{table}{section}
 \numberwithin{figure}{section}
+
 %================= 基本格式预置 ===========================
+\linespread{1.25} \zihao{-4}  % 行距、字号
+\setlength{\parskip}{0pt}  % 段距
 
-
+% 页眉页脚
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{}  
-\fancyhead[C]{\zihao{5}  \songti 西安石油大学毕业设计（论文）}
-\fancyfoot[C]{~\zihao{5} \thepage~}
+\fancyhead[C]{\zihao{5} \songti 西安石油大学本科毕业设计（论文）}
+\fancyfoot[C]{~\zihao{5} —\hspace{0.5em} \thepage \hspace{0.5em}—~}
+
 \renewcommand{\headrulewidth}{0.65pt} 
-\CTEXsetup[format={\centering\bfseries\zihao{3}\songti},name={, }]{section}
-%\CTEXsetup[format={\centering\bfseries\zihao{-2}},name={第, 章}]{section}
-\CTEXsetup[format={\bfseries\zihao{4}\songti}]{subsection}
-\CTEXsetup[format={\bfseries\zihao{-4}\songti}]{subsubsection}
-\newcommand{\upcite}[1]{\textsuperscript{\textsuperscript{\cite{#1}}}}%上标引用格式
+
+% 标题格式
+\CTEXsetup[format={\centering\zihao{-3}\bfseries},beforeskip={1em},afterskip={2em}]{section}
+\CTEXsetup[format={\bfseries\zihao{4}},beforeskip={0.5em},afterskip={0.5em}]{subsection}
+\CTEXsetup[format={\bfseries\zihao{-4}},beforeskip={0.5em},afterskip={0.5em}]{subsubsection}
+
+% 上标引用格式
+\newcommand{\upcite}[1]{\textsuperscript{\textsuperscript{\cite{#1}}}}  
 \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
 \usepackage[font=small,labelfont=bf, textfont=bf]{caption}
+
+% 目录不加粗
+%\usepackage{tocstyle}
+%\usepackage{microtype}
+%\settocfeature[toc][1]{entryhook}{\normalfont}
+
+
 %================== 图形支持宏包 =========================
 \usepackage{subfigure}
 \usepackage{graphicx}                % 嵌入png图像
 \usepackage{color,xcolor}            % 支持彩色文本、底色、文本框等
-\usepackage{pifont}                    %支持圈数字 %\ding{number}
+\usepackage{pifont}                  % 支持圈数字 %\ding{number}
 \usepackage{hyperref}                % 交叉引用
 \usepackage{caption}
 \captionsetup{figurewithin=section}
-%==================== 源码和流程图 =====================
+
+%==================== 源码和流程图 ====================
 \usepackage{listings}                % 粘贴源代码
+\lstset{ 
+	language=PHP, 
+	tabsize=4, 
+	basicstyle=\normalsize\linespread{1.1}\footnotesize\ttfamily,
+	showstringspaces=false,
+	frame=top, frame=bottom,
+	commentstyle=\color{green}, 
+	keywordstyle=\color{blue}, 
+	breaklines=true,
+	numbers=left, numberstyle=\tiny,
+}
 \usepackage{tikz}                    
 \usepackage{tikz-3dplot}
 \usetikzlibrary{shapes,arrows,positioning}
-%==================== Mac 字体设置区 ============
-\setCJKmainfont[BoldFont=宋体-简 粗体,ItalicFont=宋体-简 常规体]{宋体-简 常规体}
-\setCJKsansfont[BoldFont=宋体-简 常规体]{宋体-简 常规体}
-\setCJKmonofont{宋体-简 常规体}
+
+%==================== 字体设置 ====================
+% Mac 字体设置
+%\setCJKmainfont[BoldFont=宋体-简 粗体,ItalicFont=宋体-简 常规体]{宋体-简 常规体}
+%\setCJKsansfont[BoldFont=宋体-简 常规体]{宋体-简 常规体}
+%\setCJKmonofont{宋体-简 常规体}
+
 \setmainfont{Times New Roman} 
+\setCJKmainfont[BoldFont=华文中宋]{宋体}
+
 %==================== 自定义包 =======================
+
 %===================  定理类环境定义 ===================
 \newtheorem{example}{例}              % 整体编号
 \newtheorem{algorithm}{算法}
@@ -85,11 +109,14 @@
 \newtheorem{conclusion}{结论}
 \newtheorem{assumption}{假设}
 \usepackage{enumitem}
-%===================   正文开始    ===================
+
+
+%===================   正文开始   ===================
+
 \begin{document}
-	\bibliographystyle{gbt7714-2005}     %论文引用格式
+	
 	%==================重定义 ===================
-\renewcommand{\contentsname}{\hspace*{\fill}目\quad 录\hspace*{\fill}}   
+	\renewcommand{\contentsname}{\hspace*{\fill}目\quad 录\hspace*{\fill}\\}   
 	\renewcommand{\abstractname}{摘要} 
 	\renewcommand{\refname}{参考文献}     
 	\renewcommand{\indexname}{索引}
@@ -101,20 +128,23 @@
 	\renewcommand{\proofname}{证明}
 	\renewcommand{\algorithm}{算法} 
 	%\renewcommand{\labelenumi}{(\arabic{enumi})}
-	%============== 自定义 ===================
-	%\setlength{\parindent}{1em}
-	\fancypagestyle{plain}{
-		\pagestyle{fancy}
-	}%目录页加页眉
-	%============== 封皮和前言 =================
+
+	% 封皮和前言
 	\input{body/cover}
-	\pagestyle{plain} %不带页眉横线
+	\pagestyle{plain} 		%不带页眉横线
 	\include{body/abstract}
+	
+	
+	%=================== 目录 ===================
+	% 目录页加页眉
+	\fancypagestyle{plain}{  
+		\fancyhead[C]{\zihao{5} \songti 目\hspace{1em}录}
+	}
 	\pagenumbering{Roman}
-	%\renewcommand{\cftdot}{.}
-	%\maketitle\thispagestyle{fancy}
+	
 	\tableofcontents 
-	\thispagestyle{fancy}%页眉横线，标题
+	
+	
 	%============== 论文正文   =================
 	%\setcounter{tocdepth}{4}
 	%\setcounter{secnumdepth}{4}
@@ -126,14 +156,20 @@
 	\include{body/chapter5}
 	\include{body/chapter6}
 	\include{body/chapter7}
+	
 	%============= 参考文献 =====================
 	\addcontentsline{toc}{section}{参考文献}
 	\nocite{*}
+	\bibliographystyle{gbt7714-2005}  % 论文引用格式
+	\zihao{5} 
 	\bibliography{bibfile}
-	%\clearpage
+	\zihao{-4} 
+	
 	%=============  致谢  ======================
 	\include{body/acknowledge}
+	
 	%=============  附录 ======================
-	\include{body/appendices}
+	%\include{body/appendices}
+	
 \end{document}
 %%%%%%%%%% 结束 %%%%%%%%%%

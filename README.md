@@ -7,16 +7,16 @@
 
 ## 使用方法
 
+推荐下载安装并使用 [MiKTeX](https://miktex.org/download) 编译系统，以及 [TeXstudio](https://sourceforge.net/projects/texstudio/) 编辑器。
+
 * [点击这里](https://github.com/h2y/xsyu-latex/archive/master.zip) 下载此项目。
 
 * 使用 TeX 编辑器打开 `thesis.tex`，并将编译方式设定为 `XeLaTeX`。
 
-* 设定主文档为 `thesis.tex`，尝试进行编译。
+* 尝试进行编译，生成 `thesis.pdf` 文档。
 
 ## 相关资源
 
 - 一份其实很短的 LaTeX 入门文档：<http://liam0205.me/2014/09/08/latex-introduction/>
 
-- 编辑器 CTeX 下载：<http://www.ctex.org/CTeXDownload>
-
-欢迎大家补充关于 LaTeX 的更多优秀资源。
+- LaTeX 开源小屋：<http://www.latexstudio.net/>

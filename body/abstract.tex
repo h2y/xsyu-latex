@@ -1,39 +1,54 @@
-\thispagestyle{empty} 
-\section*{\zihao{3} \centering 海量数据的异常项检测及分类方法研究}
-\vspace{0.5cm}
+\fancypagestyle{abstractStyle}{
+	\fancyhf{}
+	\fancyhead[C]{\zihao{5} \songti 摘\hspace{1em}要}
+}
+\thispagestyle{abstractStyle} 
 
-\noindent 
-\textbf{摘\hspace{1em}要}：随着互联网的发展，人们正处于一个信息爆炸的时代。相比于过去的信息匮乏，面对现阶段海量的信息数据，人们淹没在数据中难以快速的制定合适的决策，使用简单的数据处理办法已经不能适用于现如今的需求。
+\section*{\zihao{3} \centering 计算机学院答辩管理系统的设计与实现}
+%\addcontentsline{toc}{section}{摘要}  % 摘要是否包括进目录中
 
- 针对现状，本文采用不同数据处理方法来进行研究并对实现对给定的数据集进行数据检测分析，寻找能够在相同的硬件环境下提高海量数据处理效率的算法。提出了基于决策树的数据处理方法，即对数据进行特征提取、原始样本数据的预处理、构造决策树模型、进行数据挖掘预测等方面进行了深入讨论，并详细阐述了运用算子进行数据集处理的具体实现过程。利用rapidminer对数据处理过程进行可视化解析。通过对数据处理分析，所得数据具有较强的可读性、较好的可预测性。
+\begin{center}
+	\textbf{\zihao{-3} 摘\hspace{1em}要}
+\end{center}
+\vspace{2em}
 
-设计并完成了数据在Web端的录入及储存在mysql数据库中，采用可视化工具rapidminer对mysql数据库中的数据进行读入，然后进行对读入数据进行预处理，即完成异常数据的检测及排除，在完成预处理后进一步进行所需属性的筛选，接着设置Label规则最后将处理后的数据传送给决策树模型，产生决策树可视化图像并最终根据决策树传出数据作出预测。
+随着互联网的高速发展，人们生活在数字化的信息时代。相比以前较难获取信息，当下的人们可以十分便捷地接触到海量数据，以至于人们淹没在数据中难以快速的制定合适的决策。在校园中，学院的日常教务工作同样面临着这个难题，迫切地需要将已有的业务逻辑线上化。
 
-采用本文的数据处理方法可以大幅度提高数据使用效率，直观立体的反应海量数据对未来预测的指导性作用，明显优于传统数据处理方法。
+随着学生毕业人数逐年增加，传统的大学生教务管理方案面临着挑战。这些方法往往存在性能问题，落后的系统也不能满足快速响应、较大吞吐量和现代应用服务安全的要求。因此，本文设计了一个基于Meteor框架的高性能云信息系统，实现了高校毕业设计答辩管理。实验结果表明，与 PHP、ASP 等技术实现的传统信息系统相比，该系统具有更快的响应速度和吞吐量。为传统的高校毕业管理制度提供了可靠的解决方案。
 
-\vspace{0.5cm}
+根据开发高校毕业设计答辩管理系统的需求，我们首先将功能抽象化，确定了毕业设计答辩工作的流程，以及用户角色划分。采用了JS全栈开发，选用了 Meteor 开发框架，数据库采用MongoDB，以及将React作为前端数据渲染引擎。这些都是目前web开发中最为流行的工具。
+
+我们遵循了Meteor和React所提倡的理念：前后端之间只对数据进行交互，对数据的渲染由客户端完成而非服务器端。包括对数据库读写的相关逻辑，都在客户端中被实现，节省了发送和接受请求的过程，同时安全性也是有保证的。在实际的开发中，我们感受到了这些特性所带来的便利性，那就是应用逻辑清晰，并且开发速度很快。也正是由于将数据的渲染交给了浏览器，从而大大降低了服务器的负载，在最后的压力测试中表现出了很好的成绩。
+
+\vspace{1em}
 \noindent
-\textbf{关键词：}海量数据 ；数据处理；推荐算法；属性聚类；决策树
-%\addcontentsline{toc}{section}{摘要}%摘要是否包括进目录中
+\textbf{关键词：}信息系统；教学辅助管理系统；Web开发；JavaScript；Node.js
+
 
 \clearpage
+\fancypagestyle{abstractStyleEn}{
+	\fancyhf{}
+	\fancyhead[C]{\zihao{5} ABSTRACT}
+}
+\thispagestyle{abstractStyleEn} 
 
-\thispagestyle{empty} 
-\section*{\songti\zihao{3} \centering \textbf{Research on the Detection and Classification of Exception in Massive Data
-}}
-   %用了Times New Roman字体来美化观感
+\section*{\songti\zihao{3} \centering \textbf{Design and Implementation of the Computer College Graduation Inspection Management System}}
+%\addcontentsline{toc}{section}{Abstract}  % 英文摘要是否包括进入目录
 
+\begin{center}
+	\textbf{\zihao{-3}ABSTRACT}
+\end{center}
+\vspace{2em}
+
+With the rapid development of the Internet, people are living in the digital information age. Compared with the previous difficult to obtain information, people in the moment can easily access to massive data, so that it is difficult for people to drown out the data quickly to make appropriate decisions. On the campus, the daily academic work of the college is also facing this problem, and it is urgent to online the existing business logic.
+
+With the increase in the number of students graduating year by year, the traditional management plan for college student education is facing challenges. These methods often have performance problems, and backward systems cannot meet the requirements for fast response, large throughput, and modern application service security. Therefore, this paper designs a high-performance cloud information system based on Meteor framework, which realizes the management of college graduation design defense. Experimental results show that the system has faster response speed and throughput than traditional information systems implemented by PHP, ASP and other technologies. It provides a reliable solution for the traditional university graduation management system.
+
+According to the requirements for the development of graduation design defense management system in colleges and universities, we first abstracted the function, determined the process of graduation design reply work, and the division of user roles. JS full stack development was used, the Meteor development framework was chosen, the database was MongoDB, and React was used as the front-end data rendering engine. These are the most popular tools in web development.
+
+We followed the philosophy advocated by Meteor and React: only the data is exchanged between the front and back ends, and the rendering of the data is done by the client instead of the server. Including the relevant logic for reading and writing to the database is implemented in the client, saving the process of sending and receiving requests, and the security is also guaranteed. In the actual development, we have felt the convenience brought by these features, that is, the application logic is clear and the development speed is very fast. It is also due to the rendering of the data to the browser, which greatly reduces the load on the server and shows good results in the final stress test.
+
+\vspace{1em}
 \noindent 
-\textbf{Abstract: }With the development of the Internet, people are in an era of information explosion. Compared to the lack of information in the past, in the face of massive information at this stage, it is difficult to develop appropriate decisions in the data, and the use of simple data processing can not be applied to today's needs.
+\textbf{Keywords: }Information System; Teaching Aid Management System; Web Development;\\JavaScript; Node.js;
 
-
-In this paper, different data processing methods are used to study and realize the data detection and analysis of a given data set, and find an algorithm which can improve the efficiency of massive data processing in the same hardware environment. The data processing method based on decision tree is proposed, which is the feature extraction of the data, the preprocessing of the original sample data, the construction of the decision tree model, the data mining prediction and so on, and elaborates the use of the operator to carry out the data set Processing the specific implementation process. Using RapidMiner to visualize the data processing process. Through the data processing analysis, the obtained data has a strong readability, better predictability.
-
-Design and complete the data in the Web side of the input and stored in the mysql database, the use of visual tools RapidMiner mysql database to read the data, and then read the data pre-processing, that is, the completion of abnormal data detection and exclusion, in the After the preprocessing, the filtering of the required attributes is carried out, and then the Label rule is set. Finally, the processed data is sent to the decision tree model, the decision tree visualization image is generated and finally the data is predicted based on the decision tree.
-
-The data processing method of this paper can greatly improve the efficiency of data utilization, and the guidance function of intuitive stereo response to future forecasting is obviously superior to traditional data processing method.
-
-
-\noindent 
-\textbf{Keywords: }Massive Data; Data Processing; Recommendation Algorithm; Attribute Clustering;Decision tree
-%\addcontentsline{toc}{section}{Abstract}%英文摘要是否包括进入目录
