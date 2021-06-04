@@ -1,4 +1,4 @@
-\documentclass[cs4size,a4paper]{ctexart}
+\documentclass[cs4size, a4paper, twoside]{ctexart}
 \usepackage{xeCJK}
 
 %章节总标题加点
@@ -36,9 +36,10 @@
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{}  
-\fancyhead[C]{\zihao{5} \songti 西安石油大学本科毕业设计（论文）}
+\fancyhead[OC]{\zihao{5}  \leftmark}
+\fancyhead[EC]{\zihao{5} \songti 西安石油大学大学本科毕业设计（论文）}
 \fancyfoot[C]{~\zihao{5} —\hspace{0.5em} \thepage \hspace{0.5em}—~}
-
+\renewcommand{\sectionmark}[1]{\markboth{#1}{}}
 \renewcommand{\headrulewidth}{0.65pt} 
 
 % 标题格式
@@ -64,6 +65,7 @@
 \usepackage{pifont}                  % 支持圈数字 %\ding{number}
 \usepackage{hyperref}                % 交叉引用
 \usepackage{caption}
+\usepackage{float}
 \captionsetup{figurewithin=section}
 
 %==================== 源码和流程图 ====================
